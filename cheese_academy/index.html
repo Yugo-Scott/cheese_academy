@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="ja">
-<!-- 最初の設定は終わっています　必要な方は触ってください -->
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>チーズアカデミー</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <!-- 最初の設定は終わっています　必要な方は触ってください -->
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>チーズアカデミー</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
+    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/b2f8662de2.js" crossorigin="anonymous"></script>
+  
+  </head>
 <!-- 最初の設定は終わっています　必要な方は触ってください -->
 <body>
   <!-- この中に記述していく -->
   <!-- ここから下にコードを書く -->
   <div class="container">
+    <!-- Dark Mode Switch -->
+    <div class="theme-switch-wrapper">
+      <span id="toggle-icon">
+          <span class="toggle-text">Light Mode</span>
+          <i class="fas fa-sun"></i>
+      </span>
+      <label class="theme-switch">
+          <input type="checkbox">
+          <div class="slider round"></div>
+      </label>
+  </div>
     <!-- header -->
     <div class="header">
       <div class="wrapper">
@@ -49,12 +66,20 @@
       <p>卒業後、チーズ自給自足のバックアップはもちろんのこと、</p>
       <p>チーズ職人への就職・転職もサポートします。    </p>
     </div>
-    <div class="image-container ">
-      <img src="./img/about_04.jpg" alt="about-image">
-      <img src="./img/about_03.jpg" alt="about-image">
-      <img src="./img/about_02.jpg" alt="about-image">
-      <img src="./img/about_01.jpg" alt="about-image">
-    </div> 
+    <ul class="image-container">
+      <li>
+        <img src="./img/about_04.jpg" alt="about-image">
+      </li>
+      <li>
+        <img src="./img/about_03.jpg" alt="about-image">
+      </li>
+      <li>
+        <img src="./img/about_02.jpg" alt="about-image">
+      </li>
+      <li>
+        <img src="./img/about_01.jpg" alt="about-image">
+      </li> 
+    </ul> 
     <!-- course -->
     <div class="course" id="course">
       <h3>course</h3>
@@ -101,7 +126,7 @@
       <h3>news</h3>
       <h2>ニュース</h2>
       <div class="news-cards">
-        <div class="news-card">
+        <div class="news-card heart">
           <div class="news-card__image"></div>
           <div class="news-card__content">
             <p>2016/11/18</p>
@@ -111,7 +136,7 @@
             </p>
           </div>
         </div>
-        <div class="news-card"> 
+        <div class="news-card heart"> 
           <div class="news-card__image"></div>
           <div class="news-card__content">
             <p>2016/11/18</p>
@@ -121,7 +146,7 @@
             </p>
           </div>
         </div>
-        <div class="news-card">
+        <div class="news-card heart">
           <div class="news-card__image"></div>
           <div class="news-card__content">
             <p>2016/11/18</p>
@@ -235,9 +260,8 @@
   </div>
   <!-- ここから上にコードを書く -->
   <!-- この中に記述していく -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/checker.js"></script>
+  <script src="./js/main.js"></script>
+  <!-- <script src="js/checker.js"></script> -->
 </body>
 
 </html>
